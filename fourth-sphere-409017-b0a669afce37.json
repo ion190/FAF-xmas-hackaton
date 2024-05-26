@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "fourth-sphere-409017",
+  "private_key_id": "b0a669afce37f35ab53bd70fe29944808a2a190b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCVeuO76ht9Ocpx\n9LMws6bkxukwKExcTS1SNbgF6EbZHOZwef2+E/RKp9MJsKvelyTPUL1ciozsd8iN\nA5lcDlWoNWl+u50lGYUh+1odiFV1Y0YteDE/P086Zd74WOJ5VwvMgItlh0eee/Ob\nHQvI60JJ6A8KRhLeZXacEUM57xsY5T1i9XstvaO2/NWr0EKjRohYvr37vC9bxl2i\nxwXL7bSvIGbgAhKGetEibD2cMMT/n5KKVCu73DxYL8dhoFrWfJk4ko0C0dnXhsFF\nJcCCaXUOR/5e1xfNjkWSp2ly5D3s9tyHD48PpxXDniL2zlA/Na5qdSflClLz/niW\ni5rJ3+p5AgMBAAECggEAAgp9rd+qRMFIv9no+8XAMMh8f5v/6uoM2oisPLxpVzvl\n85be0ue/1/3G9mS9/ASRS+6yHzTZwWgjSgrzXvE9KdZM3J5K13+r3y++O7/+9rgx\nHvF7WVM6eDV9irjf+BXVrehQFEX5bDMMu6CfvBG7mSRngYA9GrdE8X2U2ZIntbp0\n4y5vwYBnLJwGxrZo1LclTckREdPkIFyEpL49GNMSeUZ8UsVEmsNKd0UVoTI/s6wH\n4Z2dGQrOkSBd9C8ozn+e3YOXbHgkxHOgpkwW5Ic0BKR5MJhsAEUpcuwImPph2Zk6\nEePSzFxATFivk9Pm1ZFz/4WKQeebvJeGnSGaahzOTwKBgQDKx0AtKsddc9u9/v/3\nXERloFCEl4zmXtOx1k8f6LcqePVuv7eo09GJnaBFyrfOXis65nWCkFs2wcWZHCXU\nk/dfQkpPt/E9GYT6kcgaiBM8YL1a0r82ylmazQYQItaLhUrJ0Doy16ZRtmG1N1qH\n7uq6At/YnpnLCM0BkZrw4S8NDwKBgQC8toH4WKWw03NHnx+rs1i4E9Mceqdb/QB/\nSP9bsIb87agOalA30IogNkyXwXyFXOr1LzIKrlIShzkwczhYfQvGGybtmZRl1X8B\naurfiwWIHHNGgG1X+D15HKdBeAQdT8MODkNzJgNXyaD2WbTqjqxAv9SAsEhLl60X\nR0AKKcKf9wKBgCXacCZ+V90gJaMgGRRKCxKVjLJTwB+5D/egtACW5qptDhPwgg5o\nDDOOUz70Cr/hYFyMbN9Ep2JfZc2hLYazYHhN3aVoBwaK3wIPeLVLNZwNywtLUBqg\nR33YTAtzFW3SIhXuYw7eptOWIkM75BCADx1OMA81/CukpvBmB/BzeN8NAoGALBZ7\ncNjNBO2xngb38DY7QO4owRuKo/wMtLAKMJKiRs8DFzMRQKjwzCvDYyTqAYI+xj9b\ncpFdTUTYQJB6lnnIWWUYiCP8PnpNbLhc3RLunOkAqXTxlr7BJd1i2fG/DFYJHOyK\nJ4m2+Dh76XH1yWLBrXLjo5kLmtV5s9mKhZVSCesCgYAaDbtGKcAAQ9KKUQt32+ig\nqo6n+SHV16xJPsjOxGBA0z9rgu2wjj9yAgIsRoU98bVcavhzAaHScKs1PJuGlXi6\ntf9Wx5/Dwz3lv7loD82lpkOIqfJTEZtz9N+Mfr4N1nb1TqbrZXfb1QZ9ld1Yvyvf\nERBm2ob87LBI7WzA1l3GlA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "alexander@fourth-sphere-409017.iam.gserviceaccount.com",
+  "client_id": "106730763541896608538",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/alexander%40fourth-sphere-409017.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

@@ -1,0 +1,74 @@
+const express = require('express');
+const { exec } = require('child_process');
+const fs = require('fs');
+const path = require('path');
+const app = express();
+const fileUpload = require('express-fileupload');
+
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static('public'));
+app.use(fileUpload());
+
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/index.html');
+});
+
+app.post('/', (req, res) => {
+    if (!req.files || Object.keys(req.files).length === 0) {
+        return res.status(400).send('No files were uploaded.');
+    }
+
+    const uploadedFile = req.files.image;
+    const uploadDir = path.join(__dirname, 'images');
+
+    if (!fs.existsSync(uploadDir)) {
+        fs.mkdirSync(uploadDir);
+    }
+
+    const filePath = path.join(uploadDir, uploadedFile.name);
+
+    uploadedFile.mv(filePath, (err) => {
+        if (err) {
+            return res.status(500).send(err);
+        }
+
+        console.log('File uploaded successfully.');
+
+        const credentialsJSONFile = 'fourth-sphere-409017-b0a669afce37.json';
+        const entryDirName = 'images';
+        const commandToExecute = `npm start ${credentialsJSONFile} ${entryDirName}`;
+
+        console.log(`Executing command: ${commandToExecute}`);
+
+        exec(commandToExecute, (error, stdout, stderr) => {
+            if (error) {
+                console.error(`Error executing command: ${error}`);
+                return;
+            }
+            console.log(`Command output: ${stdout}`);
+            console.error(`Command errors: ${stderr}`);
+        });
+    });
+
+    // Send a response indicating successful upload, allowing the user to upload another file
+    res.send('File uploaded successfully. You can upload another file.');
+});
+
+// Endpoint to retrieve file content by filename
+app.get('/file/:filename', (req, res) => {
+    const { filename } = req.params;
+    const outputFileName = path.join(__dirname, 'images/', `${filename}.txt`);
+    fs.readFile(outputFileName, 'utf-8', (err, data) => {
+      if (err) {
+        res.status(500).send('Error reading file');
+      } else {
+        res.send(data);
+      }
+    });
+  });
+
+PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+});
